@@ -1,29 +1,30 @@
-# Role assumption CTF
+Hint 1: 
+You will need to list the attached role policies
 
-This lab requires you to either use the AWS CLI locally or through AWS CloudShell.
+Hint 2:
+aws iam list-attached-role-policies --role-name cross-account-9 --profile xaccount9
 
-To begin this lab, make note of the number you have been provided for your lab. Now use this to assume the role 
-cross-account-# replacing # with the number of your lab (e.g. 1-10).
+Hint 3:
+You need to list the policy versions before you can query the exact policy. 
+aws iam list-policy-versions --policy-arn "arn:aws:iam::555503665675:policy/<policy_found_in_previous_step>" --profile <profile_name>
 
-Your task is to assume your role in the account using the external id "Google2025".
+Hint 4: 
+aws iam get-policy-version --policy-arn "arn:aws:iam::555503665675:policy/<policy_found_in_previous_step>" --version-id <version_from_previous_step> --profile <profile_name>
 
-Once you have assumed the role, you should find out what permissions your role has, and use those to gain access to further privileges. Ultimately granting you access to some data. 
+Hint 5: 
+aws iam attach-role-policy --policy-arn arn:aws:iam::555503665675:policy/<policy_name_that_you_can_attach> --role-name cross-account-# --profile <profile_name>
 
+Hint 6: Notice there's a permission to attach a specific policy!
 
+Hint 7: Let's see what the new policy can do.
 
-Some setup hints:
-To verify you've correctly assumed the role, you can use aws sts-get-caller-identity.
+Hint 8:
+Try listing all S3 buckets, and check out its policy. Notice the bucket is checking for the Department Attribute?
 
-If you want to edit the AWS CLI Config, you can modify the default configuration file ~/.aws/config:
+Hint 9: aws s3api get-bucket-policy --bucket <name_of_bucket_listed_starting_with_ctf> --profile <profile_name>
 
-[profile <profile_name>]
-role_arn = arn:aws:iam::555503665675:role/cross-account-#
-source_profile = default
-external_id = Google2025
+Hint 10: Try tagging your role and see if you can access the data.
 
-The configuration above will associate the assume-role directly with a profile. --profile parameter can be provided with any CLI command to specify which profile you intend to use.
+Hint 11: aws iam tag-role --role-name cross-account-# --tags Key=Department,Value=Finance --profile <profile_name>
 
-Once you've assumed the role, you should start by inspecting your own permissions. Do you notice any permission that will allow you to elevate privileges further?
-
-
-Once you've reached the objective, you will find new IAM credentials. We can save these for later.
+Hint 12: aws s3 cp s3://<bucket_name>/<file_name>> ./<dest_file_name> --profile <profile_name>
