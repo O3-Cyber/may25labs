@@ -1,0 +1,18 @@
+let s3_bucket_policy_no_wildcard_principal = Resources.*[ Type == 'AWS::S3::BucketPolicy'
+  Metadata.guard.SuppressedRules not exists or
+  Metadata.guard.SuppressedRules.* != "S3_BUCKET_POLICY_NO_WILDCARD_PRINCIPAL"
+]
+
+rule S3_BUCKET_POLICY_NO_WILDCARD_PRINCIPAL when %s3_bucket_policy_no_wildcard_principal !empty {
+  let violations = %s3_bucket_policy_no_wildcard_principal[
+    some Properties.PolicyDocument.Statement[*] {
+      Principal == "*"
+      Effect == "Allow"
+    }
+  ]
+  %violations empty
+  <<
+    Violation: S3 Bucket policy should not allow * principal
+    Fix: Specify explicit principals in the S3 BucketPolicy
+  >>
+}
