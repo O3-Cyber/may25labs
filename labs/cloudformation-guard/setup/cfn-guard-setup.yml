@@ -1,0 +1,103 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for enabling CloudFormation Guard'
+
+Parameters:
+  BucketNamePrefix:
+    Type: String
+    Default: guard-bucket
+    Description: Prefix for the S3 buckets related to CloudFormation Guard
+
+Resources:
+  # S3 Bucket for Guard Rules
+  GuardRulesBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Join
+        - '-'
+        - - !Ref BucketNamePrefix
+          - 'rules'
+          - !Select [2, !Split ['/', !Ref 'AWS::StackId']]
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+  
+  # S3 Bucket for Guard Outputs
+  GuardOutputBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Join
+        - '-'
+        - - !Ref BucketNamePrefix
+          - 'output'
+          - !Select [2, !Split ['/', !Ref 'AWS::StackId']]
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+
+  # IAM Role for CloudFormation Guard
+  GuardServiceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Join
+        - '-'
+        - - 'CFNGuardRole'
+          - !Select [2, !Split ['/', !Ref 'AWS::StackId']]
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - hooks.cloudformation.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Ref GuardServiceRolePolicy
+
+  # IAM Policy for the Guard Service Role
+  GuardServiceRolePolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      ManagedPolicyName: !Join
+        - '-'
+        - - 'CFNGuardPolicy'
+          - !Select [2, !Split ['/', !Ref 'AWS::StackId']]
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - s3:ListBucket
+              - s3:GetObject
+              - s3:GetObjectVersion
+            Resource:
+              - !Sub 'arn:aws:s3:::${GuardOutputBucket}/*'
+              - !Sub 'arn:aws:s3:::${GuardRulesBucket}'
+              - !Sub 'arn:aws:s3:::${GuardRulesBucket}/*'
+          - Effect: Allow
+            Action:
+              - s3:PutObject
+            Resource:
+              - !Sub 'arn:aws:s3:::${GuardOutputBucket}/*'
+
+Outputs:
+  GuardServiceRoleArn:
+    Description: ARN of the CloudFormation Guard Service Role
+    Value: !GetAtt GuardServiceRole.Arn
+  
+  GuardRulesBucket:
+    Description: S3 bucket containing Guard rules
+    Value: !Ref GuardRulesBucket
+  
+  GuardOutputBucket:
+    Description: S3 bucket for Guard evaluation outputs
+    Value: !Ref GuardOutputBucket
+    
+  UniqueID:
+    Description: Unique ID from stack used for resource naming
+    Value: !Select [2, !Split ['/', !Ref 'AWS::StackId']]
