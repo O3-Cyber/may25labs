@@ -1,0 +1,1249 @@
+
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .read-more {
+            color: #00f;
+        }
+
+        .bg-success-custom {
+            background-color: #98dea7 !important;
+        }
+
+        .bg-danger {
+            background-color: #f28484 !important;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- https://datatables.net/download/index with jQuery, DataTables, Buttons, SearchPanes, and Select //-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.10.25/b-1.7.1/sp-1.4.0/sl-1.3.3/datatables.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .show-read-more .more-text {
+            display: none;
+        }
+
+        .dataTable {
+            font-size: 14px;
+        }
+
+        .container-fluid {
+            font-size: 14px;
+        }
+
+        .float-left {
+            float: left !important;
+            max-width: 100%;
+        }
+    </style>
+    <title>Prowler - The Handy Cloud Security Tool</title>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="row mt-3">
+        <div class="col-md-4">
+            <a href=https://github.com/prowler-cloud/prowler/><img class="float-left card-img-left mt-4 mr-4 ml-4"
+                        src=https://user-images.githubusercontent.com/3985464/113734260-7ba06900-96fb-11eb-82bc-d4f68a1e2710.png
+                        alt="prowler-logo"></a>
+            <div class="card">
+            <div class="card-header">
+                Report Information
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-auto">
+                    <b>Version:</b> 3.11.3
+                    </div>
+                </div>
+                </li>
+                <li class="list-group-item">
+                <b>Parameters used:</b> aws
+                </li>
+                <li class="list-group-item">
+                <b>Date:</b> 2025-05-07T08:46:08.241680
+                </li>
+            </ul>
+            </div>
+        </div> 
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        AWS Assessment Summary
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <b>AWS Account:</b> 958933162077
+                        </li>
+                        <li class="list-group-item">
+                            <b>AWS-CLI Profile:</b> default
+                        </li>
+                        <li class="list-group-item">
+                            <b>Audited Regions:</b> All Regions
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    AWS Credentials
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <b>User Id:</b> AROA56RG63BOZAWNWCSYN:google-tutor
+                        </li>
+                        <li class="list-group-item">
+                            <b>Caller Identity ARN:</b> arn:aws:sts::958933162077:assumed-role/AWSReservedSSO_AWSSecurityAssessor_cfb1e4efde7e5924/google-tutor
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+            <div class="card">
+                <div class="card-header">
+                    Assessment Overview
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <b>Total Findings:</b> TOTAL_FINDINGS
+                    </li>
+                    <li class="list-group-item">
+                        <b>Passed:</b> TOTAL_PASS
+                    </li>
+                    <li class="list-group-item">
+                        <b>Failed:</b> TOTAL_FAIL
+                    </li>
+                    <li class="list-group-item">
+                        <b>Total Resources:</b> TOTAL_RESOURCES
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="row-mt-3">
+        <div class="col-md-12">
+            <table class="table compact stripe row-border ordering" id="findingsTable" data-order='[[ 5, "asc" ]]' data-page-length='100'>
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Severity</th>
+                    <th scope="col">Service Name</th>
+                    <th scope="col">Region</th>
+                    <th style="width:20%" scope="col">Check ID</th>
+                    <th style="width:20%" scope="col">Check Title</th>
+                    <th scope="col">Resource ID</th>
+                    <th scope="col">Resource Tags</th>
+                    <th scope="col">Status Extended</th>
+                    <th scope="col">Risk</th>
+                    <th scope="col">Recomendation</th>
+                    <th scope="col">Compliance</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-northeast-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-northeast-2</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-northeast-3</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-south-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-southeast-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ap-southeast-2</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>ca-central-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>eu-central-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>eu-north-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>eu-west-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>eu-west-2</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>eu-west-3</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>sa-east-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>us-east-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>us-east-2</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>us-west-1</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>accessanalyzer</td>
+                    <td>us-west-2</td>
+                    <td>accessanalyzer<wbr>_enabled</td>
+                    <td>Check if IAM Access Analyzer is enabled</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>IAM Access Analyzer in account 958933162077 is not enabled.</td>
+                    <td><p class="show-read-more">AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.</p></td>
+                    <td><p class="show-read-more">Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).</p> <a class="read-more" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.20
+
+&#x2022;CIS-1.5: 1.20
+
+&#x2022;CIS-2.0: 1.20
+</p></td>
+                </tr>
+                
+                <tr class="table-info">
+                    <td>INFO</td>
+                    <td>medium</td>
+                    <td>account</td>
+                    <td>us-east-1</td>
+                    <td>account<wbr>_maintain<wbr>_current<wbr>_contact<wbr>_details</td>
+                    <td>Maintain current contact details.</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>Manual check: Login to the AWS Console. Choose your account name on the top right of the window -&gt; My Account -&gt; Contact Information.</td>
+                    <td><p class="show-read-more">Ensure contact email and telephone details for AWS accounts are current and map to more than one individual in your organization. An AWS account supports a number of contact details; and AWS will use these to contact the account owner if activity judged to be in breach of Acceptable Use Policy. If an AWS account is observed to be behaving in a prohibited or suspicious manner; AWS will attempt to contact the account owner by email and phone using the contact details listed. If this is unsuccessful and the account behavior needs urgent mitigation; proactive measures may be taken; including throttling of traffic between the account exhibiting suspicious behavior and the AWS API endpoints and the Internet. This will result in impaired service to and from the account in question.</p></td>
+                    <td><p class="show-read-more">Using the Billing and Cost Management console complete contact details.</p> <a class="read-more" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.1
+
+&#x2022;CIS-1.5: 1.1
+
+&#x2022;CIS-2.0: 1.1
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC03-BP03, SEC10-BP01
+
+&#x2022;ENS-RD2022: op.ext.7.aws.am.1
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>account</td>
+                    <td>us-east-1</td>
+                    <td>account<wbr>_maintain<wbr>_different<wbr>_contact<wbr>_details<wbr>_to<wbr>_security<wbr>_billing<wbr>_and<wbr>_operations</td>
+                    <td>Maintain different contact details to security, billing and operations.</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>SECURITY, BILLING and OPERATIONS contacts not found or they are not different between each other and between ROOT contact.</td>
+                    <td><p class="show-read-more">Ensure contact email and telephone details for AWS accounts are current and map to more than one individual in your organization. An AWS account supports a number of contact details; and AWS will use these to contact the account owner if activity judged to be in breach of Acceptable Use Policy. If an AWS account is observed to be behaving in a prohibited or suspicious manner; AWS will attempt to contact the account owner by email and phone using the contact details listed. If this is unsuccessful and the account behavior needs urgent mitigation; proactive measures may be taken; including throttling of traffic between the account exhibiting suspicious behavior and the AWS API endpoints and the Internet. This will result in impaired service to and from the account in question.</p></td>
+                    <td><p class="show-read-more">Using the Billing and Cost Management console complete contact details.</p> <a class="read-more" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-info">
+                    <td>INFO</td>
+                    <td>medium</td>
+                    <td>account</td>
+                    <td>us-east-1</td>
+                    <td>account<wbr>_security<wbr>_contact<wbr>_information<wbr>_is<wbr>_registered</td>
+                    <td>Ensure security contact information is registered.</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>Manual check: Login to the AWS Console. Choose your account name on the top right of the window -&gt; My Account -&gt; Alternate Contacts -&gt; Security Section.</td>
+                    <td><p class="show-read-more">AWS provides customers with the option of specifying the contact information for accounts security team. It is recommended that this information be provided. Specifying security-specific contact information will help ensure that security advisories sent by AWS reach the team in your organization that is best equipped to respond to them.</p></td>
+                    <td><p class="show-read-more">Go to the My Account section and complete alternate contacts.</p> <a class="read-more" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.2
+
+&#x2022;CIS-1.5: 1.2
+
+&#x2022;AWS-Foundational-Security-Best-Practices: account, acm
+
+&#x2022;CIS-2.0: 1.2
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC03-BP03, SEC10-BP01
+
+&#x2022;ENS-RD2022: op.ext.7.aws.am.1
+</p></td>
+                </tr>
+                
+                <tr class="table-info">
+                    <td>INFO</td>
+                    <td>medium</td>
+                    <td>account</td>
+                    <td>us-east-1</td>
+                    <td>account<wbr>_security<wbr>_questions<wbr>_are<wbr>_registered<wbr>_in<wbr>_the<wbr>_aws<wbr>_account</td>
+                    <td>Ensure security questions are registered in the AWS account.</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>Manual check: Login to the AWS Console as root. Choose your account name on the top right of the window -&gt; My Account -&gt; Configure Security Challenge Questions.</td>
+                    <td><p class="show-read-more">The AWS support portal allows account owners to establish security questions that can be used to authenticate individuals calling AWS customer service for support. It is recommended that security questions be established. When creating a new AWS account a default super user is automatically created. This account is referred to as the root account. It is recommended that the use of this account be limited and highly controlled. During events in which the root password is no longer accessible or the MFA token associated with root is lost/destroyed it is possible through authentication using secret questions and associated answers to recover root login access.</p></td>
+                    <td><p class="show-read-more">Login as root account and from My Account configure Security questions.</p> <a class="read-more" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-security-challenge.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CIS-1.4: 1.3
+
+&#x2022;CIS-1.5: 1.3
+
+&#x2022;CIS-2.0: 1.3
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC03-BP03, SEC10-BP01
+
+&#x2022;ENS-RD2022: op.ext.7.aws.am.1
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-3</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-south-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-southeast-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-southeast-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ca-central-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-central-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-north-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-3</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>sa-east-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-east-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-east-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-west-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-west-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_encryption</td>
+                    <td>Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not encrypt the query results.</td>
+                    <td><p class="show-read-more">If not enabled sensitive information at rest is not protected.</p></td>
+                    <td><p class="show-read-more">Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-northeast-3</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-south-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-southeast-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ap-southeast-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>ca-central-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-central-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-north-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>eu-west-3</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>sa-east-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-east-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-east-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-west-1</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>medium</td>
+                    <td>athena</td>
+                    <td>us-west-2</td>
+                    <td>athena<wbr>_workgroup<wbr>_enforce<wbr>_configuration</td>
+                    <td>Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</td>
+                    <td>primary</td>
+                    <td></td>
+                    <td>Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.</td>
+                    <td><p class="show-read-more">If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.</p></td>
+                    <td><p class="show-read-more">Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.</p> <a class="read-more" href="https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more"></p></td>
+                </tr>
+                
+                <tr class="p-3 mb-2 bg-success-custom">
+                    <td>PASS</td>
+                    <td>low</td>
+                    <td>lambda</td>
+                    <td>us-east-1</td>
+                    <td>awslambda<wbr>_function<wbr>_invoke<wbr>_api<wbr>_operations<wbr>_cloudtrail<wbr>_logging<wbr>_enabled</td>
+                    <td>Check if Lambda functions invoke API operations are being recorded by CloudTrail.</td>
+                    <td>func<wbr>_ssh</td>
+                    <td></td>
+                    <td>Lambda function func<wbr>_ssh is recorded by CloudTrail trail management-org-trail.</td>
+                    <td><p class="show-read-more">If logs are not enabled; monitoring of service use and threat analysis is not possible.</p></td>
+                    <td><p class="show-read-more">Make sure you are logging information about Lambda operations. Create a lifecycle and use cases for each trail.</p> <a class="read-more" href="https://docs.aws.amazon.com/lambda/latest/dg/logging-using-cloudtrail.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC04-BP01
+
+&#x2022;AWS-Well-Architected-Framework-Reliability-Pillar: REL06-BP01
+</p></td>
+                </tr>
+                
+                <tr class="p-3 mb-2 bg-success-custom">
+                    <td>PASS</td>
+                    <td>critical</td>
+                    <td>lambda</td>
+                    <td>us-east-1</td>
+                    <td>awslambda<wbr>_function<wbr>_no<wbr>_secrets<wbr>_in<wbr>_code</td>
+                    <td>Find secrets in Lambda functions code.</td>
+                    <td>func<wbr>_ssh</td>
+                    <td></td>
+                    <td>No secrets found in Lambda function func<wbr>_ssh code.</td>
+                    <td><p class="show-read-more">The use of a hard-coded password increases the possibility of password guessing.  If hard-coded passwords are used; it is possible that malicious users gain access through the account in question.</p></td>
+                    <td><p class="show-read-more">Use Secrets Manager to securely provide database credentials to Lambda functions and secure the databases as well as use the credentials to connect and query them without hardcoding the secrets in code or passing them through environmental variables.</p> <a class="read-more" href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;MITRE-ATTACK: T1552
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC02-BP03
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>critical</td>
+                    <td>lambda</td>
+                    <td>us-east-1</td>
+                    <td>awslambda<wbr>_function<wbr>_no<wbr>_secrets<wbr>_in<wbr>_variables</td>
+                    <td>Find secrets in Lambda functions variables.</td>
+                    <td>func<wbr>_ssh</td>
+                    <td></td>
+                    <td>Potential secret found in Lambda function func<wbr>_ssh variables -&gt; Private Key in variable SSH<wbr>_KEY.</td>
+                    <td><p class="show-read-more">The use of a hard-coded password increases the possibility of password guessing. If hard-coded passwords are used; it is possible that malicious users gain access through the account in question.</p></td>
+                    <td><p class="show-read-more">Use Secrets Manager to securely provide database credentials to Lambda functions and secure the databases as well as use the credentials to connect and query them without hardcoding the secrets in code or passing them through environmental variables.</p> <a class="read-more" href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;MITRE-ATTACK: T1552
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC02-BP03
+</p></td>
+                </tr>
+                
+                <tr class="p-3 mb-2 bg-success-custom">
+                    <td>PASS</td>
+                    <td>critical</td>
+                    <td>lambda</td>
+                    <td>us-east-1</td>
+                    <td>awslambda<wbr>_function<wbr>_not<wbr>_publicly<wbr>_accessible</td>
+                    <td>Check if Lambda functions have resource-based policy set as Public.</td>
+                    <td>func<wbr>_ssh</td>
+                    <td></td>
+                    <td>Lambda function func<wbr>_ssh has a policy resource-based policy not public.</td>
+                    <td><p class="show-read-more">Publicly accessible services could expose sensitive data to bad actors.</p></td>
+                    <td><p class="show-read-more">Grant usage permission on a per-resource basis and applying least privilege principle.</p> <a class="read-more" href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;CISA: your-systems-3, your-data-2
+
+&#x2022;MITRE-ATTACK: T1190
+
+&#x2022;HIPAA: 164_308_a_1_ii_b, 164_308_a_3_i, 164_312_a_1, 164_312_e_1
+
+&#x2022;GxP-21-CFR-Part-11: 11.10-d, 11.10-g
+
+&#x2022;AWS-Well-Architected-Framework-Security-Pillar: SEC03-BP07, SEC03-BP08, SEC05-BP01, SEC06-BP02
+
+&#x2022;NIST-800-171-Revision-2: 3_1_1, 3_1_2, 3_1_3, 3_1_14, 3_13_1, 3_13_2, 3_13_5
+
+&#x2022;NIST-800-53-Revision-4: ac_4, sc_7_3, sc_7
+
+&#x2022;NIST-800-53-Revision-5: ac_2_6, ac_3, ac_3_7, ac_4_21, ac_6, ac_17_b, ac_17_1, ac_17_4_a, ac_17_9, ac_17_10, mp_2, sc_7_2, sc_7_3, sc_7_9_a, sc_7_11, sc_7_12, sc_7_16, sc_7_20, sc_7_21, sc_7_24_b, sc_7_a, sc_7_b, sc_7_c, sc_25
+
+&#x2022;ENS-RD2022: op.acc.4.aws.iam.1
+
+&#x2022;NIST-CSF-1.1: ac_3, ac_5, pt_4
+
+&#x2022;RBI-Cyber-Security-Framework: annex_i_1_3
+
+&#x2022;FFIEC: d3-pc-im-b-1
+
+&#x2022;PCI-3.2.1: lambda
+
+&#x2022;FedRamp-Moderate-Revision-4: ac-3, ac-4, ac-6, ac-17-1, cm-2, sc-7-3, sc-7
+
+&#x2022;FedRAMP-Low-Revision-4: ac-3, ac-17, cm-2, sc-7
+</p></td>
+                </tr>
+                
+                <tr class="p-3 mb-2 bg-success-custom">
+                    <td>PASS</td>
+                    <td>medium</td>
+                    <td>lambda</td>
+                    <td>us-east-1</td>
+                    <td>awslambda<wbr>_function<wbr>_using<wbr>_supported<wbr>_runtimes</td>
+                    <td>Find obsolete Lambda runtimes.</td>
+                    <td>func<wbr>_ssh</td>
+                    <td></td>
+                    <td>Lambda function func<wbr>_ssh is using nodejs22.x which is supported.</td>
+                    <td><p class="show-read-more">If you have functions running on a runtime that will be deprecated in the next 60 days; Lambda notifies you by email that you should prepare by migrating your function to a supported runtime. In some cases; such as security issues that require a backwards-incompatible update; or software that does not support a long-term support (LTS) schedule; advance notice might not be possible. After a runtime is deprecated; Lambda might retire it completely at any time by disabling invocation. Deprecated runtimes are not eligible for security updates or technical support.</p></td>
+                    <td><p class="show-read-more">Test new runtimes as they are made available. Implement them in production as soon as possible.</p> <a class="read-more" href="https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;AWS-Foundational-Security-Best-Practices: lambda
+</p></td>
+                </tr>
+                
+                <tr class="table-danger">
+                    <td>FAIL</td>
+                    <td>low</td>
+                    <td>backup</td>
+                    <td>us-east-1</td>
+                    <td>backup<wbr>_vaults<wbr>_exist</td>
+                    <td>Ensure AWS Backup vaults exist</td>
+                    <td>958933162077</td>
+                    <td></td>
+                    <td>No Backup Vault exist.</td>
+                    <td><p class="show-read-more">Without an AWS Backup vault, an organization's critical data may be at risk of being lost in the event of an accidental deletion, system failures, or natural disasters.</p></td>
+                    <td><p class="show-read-more">Use AWS Backup to create backup vaults for your critical data and services.</p> <a class="read-more" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html"><i class="fas fa-external-link-alt"></i></a></td>
+                    <td><p class="show-read-more">
+&#x2022;ENS-RD2022: mp.info.6.aws.bcku.1
+</p></td>
+                </tr>
+                

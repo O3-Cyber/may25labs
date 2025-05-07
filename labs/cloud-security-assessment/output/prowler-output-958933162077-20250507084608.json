@@ -1,0 +1,3008 @@
+[{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-northeast-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-northeast-2-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-2",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-northeast-3-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-3",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-south-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-south-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-southeast-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ap-southeast-2-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-2",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-ca-central-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ca-central-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-eu-central-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-central-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-eu-north-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-north-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-eu-west-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-eu-west-2-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-2",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-eu-west-3-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-3",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-sa-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "sa-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-us-east-2-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-2",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-us-west-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-accessanalyzer_enabled-958933162077-us-west-2-958933162077",
+    "Provider": "aws",
+    "CheckID": "accessanalyzer_enabled",
+    "CheckTitle": "Check if IAM Access Analyzer is enabled",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "accessanalyzer",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "IAM Access Analyzer in account 958933162077 is not enabled.",
+    "Severity": "low",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Check if IAM Access Analyzer is enabled",
+    "Risk": "AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, that are shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. IAM Access Analyzer uses a form of mathematical analysis called automated reasoning, which applies logic and mathematical inference to determine all possible access paths allowed by a resource policy.",
+    "RelatedUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws accessanalyzer create-analyzer --analyzer-name <NAME> --type <ACCOUNT|ORGANIZATION>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Enable IAM Access Analyzer for all accounts, create analyzer and take action over it is recommendations (IAM Access Analyzer is available at no additional cost).",
+            "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.20"
+        ],
+        "CIS-1.5": [
+            "1.20"
+        ],
+        "CIS-2.0": [
+            "1.20"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-2",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-account_maintain_current_contact_details-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "account_maintain_current_contact_details",
+    "CheckTitle": "Maintain current contact details.",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "account",
+    "SubServiceName": "",
+    "Status": "INFO",
+    "StatusExtended": "Manual check: Login to the AWS Console. Choose your account name on the top right of the window -> My Account -> Contact Information.",
+    "Severity": "medium",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Maintain current contact details.",
+    "Risk": "Ensure contact email and telephone details for AWS accounts are current and map to more than one individual in your organization. An AWS account supports a number of contact details; and AWS will use these to contact the account owner if activity judged to be in breach of Acceptable Use Policy. If an AWS account is observed to be behaving in a prohibited or suspicious manner; AWS will attempt to contact the account owner by email and phone using the contact details listed. If this is unsuccessful and the account behavior needs urgent mitigation; proactive measures may be taken; including throttling of traffic between the account exhibiting suspicious behavior and the AWS API endpoints and the Internet. This will result in impaired service to and from the account in question.",
+    "RelatedUrl": "",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "No command available.",
+            "Other": "https://docs.bridgecrew.io/docs/iam_18-maintain-contact-details#aws-console"
+        },
+        "Recommendation": {
+            "Text": "Using the Billing and Cost Management console complete contact details.",
+            "Url": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.1"
+        ],
+        "CIS-1.5": [
+            "1.1"
+        ],
+        "CIS-2.0": [
+            "1.1"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC03-BP03",
+            "SEC10-BP01"
+        ],
+        "ENS-RD2022": [
+            "op.ext.7.aws.am.1"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-account_maintain_different_contact_details_to_security_billing_and_operations-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "account_maintain_different_contact_details_to_security_billing_and_operations",
+    "CheckTitle": "Maintain different contact details to security, billing and operations.",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "account",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "SECURITY, BILLING and OPERATIONS contacts not found or they are not different between each other and between ROOT contact.",
+    "Severity": "medium",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Maintain different contact details to security, billing and operations.",
+    "Risk": "Ensure contact email and telephone details for AWS accounts are current and map to more than one individual in your organization. An AWS account supports a number of contact details; and AWS will use these to contact the account owner if activity judged to be in breach of Acceptable Use Policy. If an AWS account is observed to be behaving in a prohibited or suspicious manner; AWS will attempt to contact the account owner by email and phone using the contact details listed. If this is unsuccessful and the account behavior needs urgent mitigation; proactive measures may be taken; including throttling of traffic between the account exhibiting suspicious behavior and the AWS API endpoints and the Internet. This will result in impaired service to and from the account in question.",
+    "RelatedUrl": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "",
+            "Other": "https://docs.bridgecrew.io/docs/iam_18-maintain-contact-details#aws-console"
+        },
+        "Recommendation": {
+            "Text": "Using the Billing and Cost Management console complete contact details.",
+            "Url": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-account_security_contact_information_is_registered-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "account_security_contact_information_is_registered",
+    "CheckTitle": "Ensure security contact information is registered.",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "account",
+    "SubServiceName": "",
+    "Status": "INFO",
+    "StatusExtended": "Manual check: Login to the AWS Console. Choose your account name on the top right of the window -> My Account -> Alternate Contacts -> Security Section.",
+    "Severity": "medium",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Ensure security contact information is registered.",
+    "Risk": "AWS provides customers with the option of specifying the contact information for accounts security team. It is recommended that this information be provided. Specifying security-specific contact information will help ensure that security advisories sent by AWS reach the team in your organization that is best equipped to respond to them.",
+    "RelatedUrl": "",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "No command available.",
+            "Other": "https://docs.bridgecrew.io/docs/iam_19#aws-console"
+        },
+        "Recommendation": {
+            "Text": "Go to the My Account section and complete alternate contacts.",
+            "Url": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.2"
+        ],
+        "CIS-1.5": [
+            "1.2"
+        ],
+        "AWS-Foundational-Security-Best-Practices": [
+            "account",
+            "acm"
+        ],
+        "CIS-2.0": [
+            "1.2"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC03-BP03",
+            "SEC10-BP01"
+        ],
+        "ENS-RD2022": [
+            "op.ext.7.aws.am.1"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-account_security_questions_are_registered_in_the_aws_account-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "account_security_questions_are_registered_in_the_aws_account",
+    "CheckTitle": "Ensure security questions are registered in the AWS account.",
+    "CheckType": [
+        "IAM"
+    ],
+    "ServiceName": "account",
+    "SubServiceName": "",
+    "Status": "INFO",
+    "StatusExtended": "Manual check: Login to the AWS Console as root. Choose your account name on the top right of the window -> My Account -> Configure Security Challenge Questions.",
+    "Severity": "medium",
+    "ResourceType": "Other",
+    "ResourceDetails": "",
+    "Description": "Ensure security questions are registered in the AWS account.",
+    "Risk": "The AWS support portal allows account owners to establish security questions that can be used to authenticate individuals calling AWS customer service for support. It is recommended that security questions be established. When creating a new AWS account a default super user is automatically created. This account is referred to as the root account. It is recommended that the use of this account be limited and highly controlled. During events in which the root password is no longer accessible or the MFA token associated with root is lost/destroyed it is possible through authentication using secret questions and associated answers to recover root login access.",
+    "RelatedUrl": "",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "No command available.",
+            "Other": "https://docs.bridgecrew.io/docs/iam_15"
+        },
+        "Recommendation": {
+            "Text": "Login as root account and from My Account configure Security questions.",
+            "Url": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-security-challenge.html"
+        }
+    },
+    "Compliance": {
+        "CIS-1.4": [
+            "1.3"
+        ],
+        "CIS-1.5": [
+            "1.3"
+        ],
+        "CIS-2.0": [
+            "1.3"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC03-BP03",
+            "SEC10-BP01"
+        ],
+        "ENS-RD2022": [
+            "op.ext.7.aws.am.1"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-northeast-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-northeast-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-northeast-3-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-3",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-3:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-south-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-south-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-south-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-southeast-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-southeast-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ap-southeast-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-southeast-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-ca-central-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ca-central-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ca-central-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-eu-central-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-central-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-central-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-eu-north-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-north-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-north-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-eu-west-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-eu-west-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-eu-west-3-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-3",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-3:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-sa-east-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "sa-east-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:sa-east-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-us-east-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-east-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-us-east-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-east-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-us-west-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-west-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_encryption-958933162077-us-west-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_encryption",
+    "CheckTitle": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not encrypt the query results.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+    "Risk": "If not enabled sensitive information at rest is not protected.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/encryption.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "https://docs.bridgecrew.io/docs/ensure-that-athena-workgroup-is-encrypted#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates ResultConfigurationUpdates={EncryptionConfiguration={EncryptionOption=SSE_S3|SSE_KMS|CSE_KMS}}",
+            "Other": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Athena/encryption-enabled.html"
+        },
+        "Recommendation": {
+            "Text": "Enable Encryption. Use a CMK where possible. It will provide additional management and privacy benefits.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [
+        "encryption"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-west-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-northeast-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-northeast-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-northeast-3-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-northeast-3",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-northeast-3:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-south-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-south-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-south-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-southeast-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-southeast-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ap-southeast-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ap-southeast-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ap-southeast-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-ca-central-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "ca-central-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:ca-central-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-eu-central-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-central-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-central-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-eu-north-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-north-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-north-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-eu-west-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-eu-west-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-eu-west-3-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "eu-west-3",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:eu-west-3:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-sa-east-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "sa-east-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:sa-east-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-us-east-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-east-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-us-east-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-east-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-us-west-1-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-1",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-west-1:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-athena_workgroup_enforce_configuration-958933162077-us-west-2-primary",
+    "Provider": "aws",
+    "CheckID": "athena_workgroup_enforce_configuration",
+    "CheckTitle": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "CheckType": [
+        "Software and Configuration Checks"
+    ],
+    "ServiceName": "athena",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Athena WorkGroup primary does not enforce the workgroup configuration, so it can be overridden by the client-side settings.",
+    "Severity": "medium",
+    "ResourceType": "WorkGroup",
+    "ResourceDetails": "",
+    "Description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+    "Risk": "If workgroup configuration is not enforced security settings like encryption can be overriden by client-side settings.",
+    "RelatedUrl": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_general_33#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_general_33#terraform",
+            "CLI": "aws athena update-work-group --region <REGION> --work-group <workgroup_name> --configuration-updates EnforceWorkGroupConfiguration=True",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+            "Url": "https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html"
+        }
+    },
+    "Compliance": {},
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-west-2",
+    "ResourceId": "primary",
+    "ResourceArn": "arn:aws:athena:us-west-2:958933162077:workgroup/primary",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-awslambda_function_invoke_api_operations_cloudtrail_logging_enabled-958933162077-us-east-1-func_ssh",
+    "Provider": "aws",
+    "CheckID": "awslambda_function_invoke_api_operations_cloudtrail_logging_enabled",
+    "CheckTitle": "Check if Lambda functions invoke API operations are being recorded by CloudTrail.",
+    "CheckType": [],
+    "ServiceName": "lambda",
+    "SubServiceName": "",
+    "Status": "PASS",
+    "StatusExtended": "Lambda function func_ssh is recorded by CloudTrail trail management-org-trail.",
+    "Severity": "low",
+    "ResourceType": "AwsLambdaFunction",
+    "ResourceDetails": "",
+    "Description": "Check if Lambda functions invoke API operations are being recorded by CloudTrail.",
+    "Risk": "If logs are not enabled; monitoring of service use and threat analysis is not possible.",
+    "RelatedUrl": "https://docs.aws.amazon.com/lambda/latest/dg/logging-using-cloudtrail.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Make sure you are logging information about Lambda operations. Create a lifecycle and use cases for each trail.",
+            "Url": "https://docs.aws.amazon.com/lambda/latest/dg/logging-using-cloudtrail.html"
+        }
+    },
+    "Compliance": {
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC04-BP01"
+        ],
+        "AWS-Well-Architected-Framework-Reliability-Pillar": [
+            "REL06-BP01"
+        ]
+    },
+    "Categories": [
+        "forensics-ready"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "func_ssh",
+    "ResourceArn": "arn:aws:lambda:us-east-1:958933162077:function:func_ssh",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-awslambda_function_no_secrets_in_code-958933162077-us-east-1-func_ssh",
+    "Provider": "aws",
+    "CheckID": "awslambda_function_no_secrets_in_code",
+    "CheckTitle": "Find secrets in Lambda functions code.",
+    "CheckType": [],
+    "ServiceName": "lambda",
+    "SubServiceName": "",
+    "Status": "PASS",
+    "StatusExtended": "No secrets found in Lambda function func_ssh code.",
+    "Severity": "critical",
+    "ResourceType": "AwsLambdaFunction",
+    "ResourceDetails": "",
+    "Description": "Find secrets in Lambda functions code.",
+    "Risk": "The use of a hard-coded password increases the possibility of password guessing.  If hard-coded passwords are used; it is possible that malicious users gain access through the account in question.",
+    "RelatedUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Use Secrets Manager to securely provide database credentials to Lambda functions and secure the databases as well as use the credentials to connect and query them without hardcoding the secrets in code or passing them through environmental variables.",
+            "Url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html"
+        }
+    },
+    "Compliance": {
+        "MITRE-ATTACK": [
+            "T1552"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC02-BP03"
+        ]
+    },
+    "Categories": [
+        "secrets"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "func_ssh",
+    "ResourceArn": "arn:aws:lambda:us-east-1:958933162077:function:func_ssh",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-awslambda_function_no_secrets_in_variables-958933162077-us-east-1-func_ssh",
+    "Provider": "aws",
+    "CheckID": "awslambda_function_no_secrets_in_variables",
+    "CheckTitle": "Find secrets in Lambda functions variables.",
+    "CheckType": [],
+    "ServiceName": "lambda",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "Potential secret found in Lambda function func_ssh variables -> Private Key in variable SSH_KEY.",
+    "Severity": "critical",
+    "ResourceType": "AwsLambdaFunction",
+    "ResourceDetails": "",
+    "Description": "Find secrets in Lambda functions variables.",
+    "Risk": "The use of a hard-coded password increases the possibility of password guessing. If hard-coded passwords are used; it is possible that malicious users gain access through the account in question.",
+    "RelatedUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://docs.bridgecrew.io/docs/bc_aws_secrets_3#cloudformation",
+            "Terraform": "https://docs.bridgecrew.io/docs/bc_aws_secrets_3#terraform",
+            "CLI": "https://docs.bridgecrew.io/docs/bc_aws_secrets_3#cli-command",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Use Secrets Manager to securely provide database credentials to Lambda functions and secure the databases as well as use the credentials to connect and query them without hardcoding the secrets in code or passing them through environmental variables.",
+            "Url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/lambda-functions.html"
+        }
+    },
+    "Compliance": {
+        "MITRE-ATTACK": [
+            "T1552"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC02-BP03"
+        ]
+    },
+    "Categories": [
+        "secrets"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "func_ssh",
+    "ResourceArn": "arn:aws:lambda:us-east-1:958933162077:function:func_ssh",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-awslambda_function_not_publicly_accessible-958933162077-us-east-1-func_ssh",
+    "Provider": "aws",
+    "CheckID": "awslambda_function_not_publicly_accessible",
+    "CheckTitle": "Check if Lambda functions have resource-based policy set as Public.",
+    "CheckType": [],
+    "ServiceName": "lambda",
+    "SubServiceName": "",
+    "Status": "PASS",
+    "StatusExtended": "Lambda function func_ssh has a policy resource-based policy not public.",
+    "Severity": "critical",
+    "ResourceType": "AwsLambdaFunction",
+    "ResourceDetails": "",
+    "Description": "Check if Lambda functions have resource-based policy set as Public.",
+    "Risk": "Publicly accessible services could expose sensitive data to bad actors.",
+    "RelatedUrl": "https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Lambda/function-exposed.html",
+            "Terraform": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Lambda/function-exposed.html",
+            "CLI": "https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/Lambda/function-exposed.html",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Grant usage permission on a per-resource basis and applying least privilege principle.",
+            "Url": "https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html"
+        }
+    },
+    "Compliance": {
+        "CISA": [
+            "your-systems-3",
+            "your-data-2"
+        ],
+        "MITRE-ATTACK": [
+            "T1190"
+        ],
+        "HIPAA": [
+            "164_308_a_1_ii_b",
+            "164_308_a_3_i",
+            "164_312_a_1",
+            "164_312_e_1"
+        ],
+        "GxP-21-CFR-Part-11": [
+            "11.10-d",
+            "11.10-g"
+        ],
+        "AWS-Well-Architected-Framework-Security-Pillar": [
+            "SEC03-BP07",
+            "SEC03-BP08",
+            "SEC05-BP01",
+            "SEC06-BP02"
+        ],
+        "NIST-800-171-Revision-2": [
+            "3_1_1",
+            "3_1_2",
+            "3_1_3",
+            "3_1_14",
+            "3_13_1",
+            "3_13_2",
+            "3_13_5"
+        ],
+        "NIST-800-53-Revision-4": [
+            "ac_4",
+            "sc_7_3",
+            "sc_7"
+        ],
+        "NIST-800-53-Revision-5": [
+            "ac_2_6",
+            "ac_3",
+            "ac_3_7",
+            "ac_4_21",
+            "ac_6",
+            "ac_17_b",
+            "ac_17_1",
+            "ac_17_4_a",
+            "ac_17_9",
+            "ac_17_10",
+            "mp_2",
+            "sc_7_2",
+            "sc_7_3",
+            "sc_7_9_a",
+            "sc_7_11",
+            "sc_7_12",
+            "sc_7_16",
+            "sc_7_20",
+            "sc_7_21",
+            "sc_7_24_b",
+            "sc_7_a",
+            "sc_7_b",
+            "sc_7_c",
+            "sc_25"
+        ],
+        "ENS-RD2022": [
+            "op.acc.4.aws.iam.1"
+        ],
+        "NIST-CSF-1.1": [
+            "ac_3",
+            "ac_5",
+            "pt_4"
+        ],
+        "RBI-Cyber-Security-Framework": [
+            "annex_i_1_3"
+        ],
+        "FFIEC": [
+            "d3-pc-im-b-1"
+        ],
+        "PCI-3.2.1": [
+            "lambda"
+        ],
+        "FedRamp-Moderate-Revision-4": [
+            "ac-3",
+            "ac-4",
+            "ac-6",
+            "ac-17-1",
+            "cm-2",
+            "sc-7-3",
+            "sc-7"
+        ],
+        "FedRAMP-Low-Revision-4": [
+            "ac-3",
+            "ac-17",
+            "cm-2",
+            "sc-7"
+        ]
+    },
+    "Categories": [
+        "internet-exposed"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "func_ssh",
+    "ResourceArn": "arn:aws:lambda:us-east-1:958933162077:function:func_ssh",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-awslambda_function_using_supported_runtimes-958933162077-us-east-1-func_ssh",
+    "Provider": "aws",
+    "CheckID": "awslambda_function_using_supported_runtimes",
+    "CheckTitle": "Find obsolete Lambda runtimes.",
+    "CheckType": [],
+    "ServiceName": "lambda",
+    "SubServiceName": "",
+    "Status": "PASS",
+    "StatusExtended": "Lambda function func_ssh is using nodejs22.x which is supported.",
+    "Severity": "medium",
+    "ResourceType": "AwsLambdaFunction",
+    "ResourceDetails": "",
+    "Description": "Find obsolete Lambda runtimes.",
+    "Risk": "If you have functions running on a runtime that will be deprecated in the next 60 days; Lambda notifies you by email that you should prepare by migrating your function to a supported runtime. In some cases; such as security issues that require a backwards-incompatible update; or software that does not support a long-term support (LTS) schedule; advance notice might not be possible. After a runtime is deprecated; Lambda might retire it completely at any time by disabling invocation. Deprecated runtimes are not eligible for security updates or technical support.",
+    "RelatedUrl": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws lambda update-function-configuration --region AWS-REGION --function-name FUNCTION-NAME --runtime 'RUNTIME'",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Test new runtimes as they are made available. Implement them in production as soon as possible.",
+            "Url": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    "Compliance": {
+        "AWS-Foundational-Security-Best-Practices": [
+            "lambda"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "func_ssh",
+    "ResourceArn": "arn:aws:lambda:us-east-1:958933162077:function:func_ssh",
+    "ResourceTags": {}
+},{
+    "AssessmentStartTime": "2025-05-07T08:46:08.241680",
+    "FindingUniqueId": "prowler-aws-backup_vaults_exist-958933162077-us-east-1-958933162077",
+    "Provider": "aws",
+    "CheckID": "backup_vaults_exist",
+    "CheckTitle": "Ensure AWS Backup vaults exist",
+    "CheckType": [
+        "Recover",
+        "Resilience",
+        "Backup"
+    ],
+    "ServiceName": "backup",
+    "SubServiceName": "",
+    "Status": "FAIL",
+    "StatusExtended": "No Backup Vault exist.",
+    "Severity": "low",
+    "ResourceType": "AwsBackupBackupVault",
+    "ResourceDetails": "",
+    "Description": "This check ensures that AWS Backup vaults exist to provide a secure and durable storage location for backup data.",
+    "Risk": "Without an AWS Backup vault, an organization's critical data may be at risk of being lost in the event of an accidental deletion, system failures, or natural disasters.",
+    "RelatedUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html",
+    "Remediation": {
+        "Code": {
+            "NativeIaC": "",
+            "Terraform": "",
+            "CLI": "aws backup create-backup-vault --backup-vault-name <backup_vault_name>",
+            "Other": ""
+        },
+        "Recommendation": {
+            "Text": "Use AWS Backup to create backup vaults for your critical data and services.",
+            "Url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html"
+        }
+    },
+    "Compliance": {
+        "ENS-RD2022": [
+            "mp.info.6.aws.bcku.1"
+        ]
+    },
+    "Categories": [],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "Profile": null,
+    "AccountId": "958933162077",
+    "OrganizationsInfo": null,
+    "Region": "us-east-1",
+    "ResourceId": "958933162077",
+    "ResourceArn": "arn:aws:iam::958933162077:root",
+    "ResourceTags": {}
+},
